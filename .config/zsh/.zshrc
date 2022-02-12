@@ -51,7 +51,13 @@ setopt PUSHD_SILENT         # Do not print the directory stack after pushd or po
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
-	
+
+#####################
+# PRIVATE VARIABLES #
+#####################
+
+source $DOTFILES/.private_envs 2> /dev/null
+
 #######################
 # SYNTAX HIGHLIGHTING #
 #######################
