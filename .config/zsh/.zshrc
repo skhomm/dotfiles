@@ -50,3 +50,10 @@ setopt PUSHD_SILENT         # Do not print the directory stack after pushd or po
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
+	
+#######################
+# SYNTAX HIGHLIGHTING #
+#######################
+
+# Source command must be at the end of .zshrc
+source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
