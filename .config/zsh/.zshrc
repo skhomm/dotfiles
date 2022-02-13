@@ -75,4 +75,4 @@ eval "$(pyenv init --path)"
 #######################
 
 # Source command must be at the end of .zshrc
-source $DOTFILES/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $DOTFILES/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
