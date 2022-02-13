@@ -76,7 +76,11 @@ source $DOTFILES/.private_envs 2> /dev/null
 # PYTHON #
 ##########
 
-eval "$(pyenv init --path)"
+if command -v pyenv &> /dev/null; then
+    eval "$(pyenv init --path)"
+else
+    echo "pyenv not installed"
+fi
 
 #######################
 # SYNTAX HIGHLIGHTING #
