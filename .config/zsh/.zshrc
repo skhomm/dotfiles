@@ -13,6 +13,7 @@ source "$DOTFILES/zsh/plugins/cursor_mode"
 # HISTORY #
 ###########
 
+HISTFILE=~/.zsh_history
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
 
 ###########
