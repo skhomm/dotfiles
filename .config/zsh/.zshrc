@@ -25,6 +25,7 @@ alias ls='ls --color=auto'
 
 alias vim='nvim'
 alias wireshark='open -n -a /Applications/Wireshark.app'
+alias env='source env/bin/activate'
 
 ##########
 # PROMPT #
@@ -56,6 +57,7 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 # PRIVATE VARIABLES #
 #####################
 
+# Make sure not to add those files to a public repo
 source $DOTFILES/.private_envs 2> /dev/null
 
 #######################
