@@ -29,9 +29,15 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-alias vim='nvim'
 alias wireshark='open -n -a /Applications/Wireshark.app'
 alias env='source env/bin/activate'
+
+# Check if nvim is installed before aliasing it to vim
+if command -v nvim &> /dev/null; then
+    alias vim='nvim'
+else
+    echo "nvim not installed"
+fi
 
 ##########
 # PROMPT #
