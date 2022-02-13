@@ -22,6 +22,10 @@ setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias ls='ls --color=auto'
+alias la='ls -lah'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
 
 alias vim='nvim'
 alias wireshark='open -n -a /Applications/Wireshark.app'
@@ -59,6 +63,12 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # Make sure not to add those files to a public repo
 source $DOTFILES/.private_envs 2> /dev/null
+
+##########
+# PYTHON #
+##########
+
+eval "$(pyenv init --path)"
 
 #######################
 # SYNTAX HIGHLIGHTING #
