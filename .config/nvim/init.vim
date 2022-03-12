@@ -4,12 +4,11 @@ let mapleader = " "
 
 set number relativenumber
 
-"set list
+" Set list to show special characters
 set lcs=space:·,trail:×,tab:❘⠀
 set tabstop=4
 set shiftwidth=4
 
-"set expandtab
 set smartcase
 set incsearch
 
@@ -21,6 +20,10 @@ map <c-h> <Home>
 map <Leader><Space> i<Space><Esc>
 map <c-j> <c-f>
 map <c-k> <c-b>
+
+" To work with native clipboard
+map <Leader>y "*y
+map <Leader>p "*p
 
 map <expr> <Leader><Tab> &list == 0 ? ':set list<CR>' : ':set list!<CR>'
 map <Leader>/ :set hlsearch!<CR>
