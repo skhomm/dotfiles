@@ -1,4 +1,11 @@
 ###########
+# Startup #
+###########
+
+# Check if there are any diffs in config against last commit
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME diff
+
+###########
 # VIMMING #
 ###########
 
@@ -22,6 +29,7 @@ setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed
 ###########
 
 alias conf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias confu='conf commit -am '\"'Update config'\"
 
 alias ls='ls --color=auto'
 alias la='ls -lah'
