@@ -5,6 +5,11 @@
 # Check if there are any diffs in config against last commit
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME diff
 
+print "
+Use <conf> to track changes in your .dotfiles:
+conf [diff] [status] [add] [commit] [push] [log]
+"
+
 ###########
 # VIMMING #
 ###########
@@ -30,6 +35,7 @@ setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed
 
 alias conf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias confu='conf commit -am '\"'Update config'\"
+alias confe='vim $HOME/.config/zsh/.zshrc'
 
 alias ls='ls --color=auto'
 alias la='ls -lah'
