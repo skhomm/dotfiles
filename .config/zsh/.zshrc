@@ -44,7 +44,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 
 alias wireshark='open -n -a /Applications/Wireshark.app'
-alias env='source env/bin/activate'
+alias venv='source env/bin/activate'
 
 alias gs='git status'
 alias gd='git diff'
