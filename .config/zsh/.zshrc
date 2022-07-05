@@ -53,6 +53,8 @@ alias gl='git log'
 alias b='cd -'
 alias bd='cd ..'
 
+alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,publickey,password'
+
 # Check if nvim is installed before aliasing it to vim
 if command -v nvim &> /dev/null; then
     alias vim='nvim'
