@@ -6,6 +6,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 export PYENV_ROOT="$XDG_CONFIG_HOME/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PYLINTRC="$XDG_CONFIG_HOME/pylint/.pylintrc"
 
 export HISTSIZE=10000
 export SAVEHIST=10000
