@@ -44,6 +44,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 
 alias wireshark='open -n -a /Applications/Wireshark.app'
+alias ipl='ipython'
 alias venv='source env/bin/activate'
 
 alias gs='git status'
@@ -53,7 +54,9 @@ alias gl='git log'
 alias b='cd -'
 alias bd='cd ..'
 
-alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,publickey,password'
+alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,password,publickey'
+
+alias ec='echo $?'
 
 # Check if nvim is installed before aliasing it to vim
 if command -v nvim &> /dev/null; then
