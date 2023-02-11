@@ -43,6 +43,8 @@ alias conf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias confu='conf commit -am '\"'Update config'\"
 alias confe='vim $HOME/.config/zsh/.zshrc'
 
+alias tma='tmux a'
+
 alias ls='ls --color=auto'
 alias la='ls -lah'
 alias rm='rm -i'
