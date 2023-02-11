@@ -66,6 +66,8 @@ alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,password,pub
 
 alias ec='echo $?'
 
+alias yfi='python3 ~/projects/yfitool/yfitool.py'
+
 # Check if nvim is installed before aliasing it to vim
 if command -v nvim &> /dev/null; then
     alias vim='nvim'
