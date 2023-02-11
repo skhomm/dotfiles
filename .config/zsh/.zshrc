@@ -8,6 +8,12 @@
 print "
 Use <conf> to track changes in your .dotfiles:
 conf [diff] [status] [add] [commit] [push] [log]
+
+aliases:
+<confe> = edit zshrc
+<confu> = conf commit -am
+
+Use <conf push> to push changes to github
 "
 
 ###########
