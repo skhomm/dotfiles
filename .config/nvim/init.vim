@@ -15,8 +15,6 @@ set incsearch
 map <Leader>o o<Esc>k
 map <Leader>O O<Esc>j
 map <Leader>0 $
-map <c-l> <End>
-map <c-h> <Home>
 map <Leader><Space> i<Space><Esc>
 map <c-j> <c-f>
 map <c-k> <c-b>
