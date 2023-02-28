@@ -63,6 +63,8 @@ alias b='cd -'
 alias bd='cd ..'
 
 alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,password,publickey'
+alias sshi='ssh -o IdentitiesOnly=yes -i'
+alias scpi='scp -o IdentitiesOnly=yes -i'
 
 alias ec='echo $?'
 
