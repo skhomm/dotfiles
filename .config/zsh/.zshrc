@@ -65,6 +65,7 @@ alias bd='cd ..'
 alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,password,publickey'
 alias sshi='ssh -o IdentitiesOnly=yes -i'
 alias scpi='scp -o IdentitiesOnly=yes -i'
+alias scppass='scp -o PreferredAuthentications=keyboard-interactive,password,publickey'
 
 alias ec='echo $?'
 
@@ -103,13 +104,6 @@ setopt PUSHD_SILENT         # Do not print the directory stack after pushd or po
 alias d='dirs -v'
 for index ({0..9}) alias "$index"="cd +${index}"; unset index
 
-#####################
-# PRIVATE VARIABLES #
-#####################
-
-# Make sure not to add those files to a public repo
-source $DOTFILES/.private_envs 2> /dev/null
-
 ##########
 # PYTHON #
 ##########
@@ -119,6 +113,14 @@ if command -v pyenv &> /dev/null; then
 else
     echo "pyenv not installed"
 fi
+
+##################
+# PRIVATE CONFIG #
+##################
+
+# Make sure not to add those files to a public repo
+source $DOTFILES/.private_envs 2> /dev/null
+source $DOTFILES/zsh/.private_config 2> /dev/null
 
 #######################
 # SYNTAX HIGHLIGHTING #
