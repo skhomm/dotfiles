@@ -62,8 +62,8 @@ alias gl='git log'
 alias b='cd -'
 alias bd='cd ..'
 
-alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,password,publickey'
 alias sshi='ssh -o IdentitiesOnly=yes -i'
+alias sshpass='ssh -o PreferredAuthentications=keyboard-interactive,password,publickey'
 alias scpi='scp -o IdentitiesOnly=yes -i'
 alias scppass='scp -o PreferredAuthentications=keyboard-interactive,password,publickey'
 
