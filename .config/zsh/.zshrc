@@ -33,6 +33,8 @@ source "$DOTFILES/zsh/plugins/cursor_mode"
 
 HISTFILE=~/.zsh_history
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
+setopt inc_append_history
+setopt share_history
 # setopt SHARE_HISTORY
 
 ###########
@@ -113,6 +115,12 @@ if command -v pyenv &> /dev/null; then
 else
     echo "pyenv not installed"
 fi
+
+########
+# PATH #
+########
+
+PATH=$PATH:/usr/local/sbin
 
 ##################
 # PRIVATE CONFIG #
