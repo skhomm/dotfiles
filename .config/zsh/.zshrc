@@ -91,8 +91,9 @@ fi
 # PROMPT #
 ##########
 
-fpath=($DOTFILES/zsh/prompt $fpath)
-source $DOTFILES/zsh/prompt/prompt_purification_setup
+#fpath=($DOTFILES/zsh/prompt $fpath)
+#source $DOTFILES/zsh/prompt/prompt_purification_setup
+source $DOTFILES/zsh/prompt/prompt_vcs_info
 
 ##############
 # COMPLETION #
