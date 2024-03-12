@@ -78,7 +78,7 @@ alias scppass='scp -o PreferredAuthentications=keyboard-interactive,password,pub
 
 alias ec='echo $?'
 
-alias yfi='python3 ~/projects/yfitool/yfitool.py'
+alias yfi='python3 ~/tools/yfitool/yfitool.py'
 
 # Check if nvim is installed before aliasing it to vim
 if command -v nvim &> /dev/null; then
