@@ -1,0 +1,11 @@
+# Ignore everything by default
+*
+
+# But allow this file itself
+!.gitignore
+
+# Whitelist specific files/dirs you really want
+!README.md
+!.zshenv
+!.gitmodules
+!.config/**
